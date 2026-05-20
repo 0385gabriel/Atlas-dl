@@ -1007,7 +1007,10 @@ Quando identificar que o documento é uma matrícula de imóvel (seja por leitur
 - Área total original da matrícula: [m² ou ha]
 - Área atual remanescente: [m² ou ha — se houve desmembramento, localização de parcela ou destacamento, indicar qual ato alterou a área e quando. Se não houve alteração, repetir a área original.]
 - Situação condominial: [indicar se a área está em regime de condomínio entre proprietários, ou se é propriedade individual]
-ATENÇÃO ÁREA: Se ao longo da matrícula houver atos de localização de parcela, desmembramento, remembramento ou destacamento que alterem a área, identificar claramente a área original, o que foi destacado/transferido para outra matrícula e qual a área remanescente hoje nesta matrícula.
+ATENÇÃO ÁREA: Se ao longo da matrícula houver atos que alterem a área ou o status da matrícula, tratar conforme o tipo:
+- DESMEMBRAMENTO / LOCALIZAÇÃO DE PARCELA / DESTACAMENTO: indicar área original, o que foi destacado e para qual matrícula do cartório foi transferido, e qual a área remanescente nesta matrícula
+- FUSÃO / REMEMBRAMENTO / UNIFICAÇÃO: quando duas ou mais matrículas são unidas em uma nova, informar: quais matrículas foram fundidas (números do cartório, NÃO do INCRA), qual a nova matrícula originada (número do cartório), e que esta matrícula foi ENCERRADA. Nunca usar números de cadastro do INCRA como número de matrícula — são cadastros distintos.
+- ENCERRAMENTO / EXTINÇÃO: se a matrícula foi encerrada por fusão ou outro motivo, indicar claramente o status ENCERRADA, o motivo, o ato que determinou o encerramento (AV ou R, com número e data), e a matrícula que sucedeu este imóvel
 
 **4. PROPRIETÁRIOS ATUAIS**
 ATENÇÃO CONDOMÍNIO: Se o imóvel for condominial (múltiplos titulares com frações distintas), listar TODOS os condôminos com suas frações. Rastrear os atos ao longo de toda a matrícula para identificar quem detém cada fração hoje — não se basear apenas na abertura. Se uma fração foi transferida por compra e venda, herança ou partilha, o proprietário atual é o adquirente, não o original.
@@ -1027,10 +1030,22 @@ ATENÇÃO CONDOMÍNIO: Se o imóvel for condominial (múltiplos titulares com fr
 - Descrição: [conforme constar no ato]
 [Se não houver: "Nenhuma edificação ou benfeitoria averbada localizada."]
 
-**6. ALTERAÇÕES DE LOCALIZAÇÃO**
-[Verificar se houve renumeração de imóvel, alteração de logradouro, remembramento, desmembramento ou qualquer ato que tenha modificado a localização ou descrição do imóvel ao longo da matrícula]
-- [Sim / Não]
-- [Se sim, descrever: qual alteração, em qual ato, data]
+**6. ALTERAÇÕES DE LOCALIZAÇÃO E STATUS DA MATRÍCULA**
+Verificar ao longo de TODOS os atos se houve qualquer alteração de localização, área ou status. Tratar cada tipo:
+
+- Alteração de logradouro / renumeração: descrever o ato, data e qual foi a mudança
+- Desmembramento / destacamento / localização de parcela: indicar ato, data, área destacada e matrícula de destino (número do cartório)
+- Remembramento / fusão / unificação: indicar quais matrículas do cartório foram unidas, qual nova matrícula foi originada (número do cartório — NUNCA usar número do INCRA), e o ato que determinou (AV ou R, com número e data)
+- Servidões constituídas ou extintas: indicar tipo, ato, data e área afetada
+- Encerramento da matrícula: se a matrícula foi encerrada/extinta por qualquer motivo, indicar EXPLICITAMENTE no seguinte formato obrigatório:
+  * Status: ⚠️ MATRÍCULA ENCERRADA
+  * Motivo: [fusão / cancelamento / outro]
+  * Ato de encerramento: [número do ato — ex: AV.06] — Data: [data]
+  * Matrículas fundidas: [listar TODOS os números de matrícula do cartório que foram unificados, incluindo a própria matrícula analisada — NUNCA usar número do INCRA]
+  * ➡️ Nova matrícula originada: [número da matrícula do cartório que foi criada pela fusão — este campo é OBRIGATÓRIO quando constar no documento. Buscar expressões como "dando origem à matrícula nº X", "originando a matrícula nº X", "nova matrícula nº X". Se constar no documento, DEVE aparecer aqui.]
+  * Cartório: [nome do cartório onde a nova matrícula foi registrada, se informado]
+
+[Se não houve nenhuma alteração: "Nenhuma alteração de localização ou status identificada."]
 
 **7. ÔNUS E GRAVAMES ATIVOS**
 ATENÇÃO: Percorrer TODOS os atos da matrícula. Para cada ônus, verificar se existe ato posterior de cancelamento, liberação parcial ou quitação. Listar APENAS os que permanecem ativos.
